@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5e7c8">
+  <meta name="description" content="A chaotic little birthday scrapbook for my favorite human.">
+  <title>HAPPY BIRTHDAY, THARUNYA!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tape tape-top" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to top">THE BESTIE ARCHIVES ✦</a>
+    <button class="music-toggle" id="partyBtn" type="button" aria-pressed="false">🎉 Party mode: OFF</button>
+  </header>
+
+  <main id="home">
+    <section class="hero paper">
+      <p class="eyebrow">OFFICIAL DOCUMENT • CLASSIFIED BESTIE BUSINESS</p>
+      <div class="sticker sticker-star" aria-hidden="true">✦</div>
+      <p class="tiny-label">A VERY IMPORTANT ANNOUNCEMENT</p>
+      <h1>HAPPY<br><span>BIRTHDAY,</span><br><em id="heroName">THARUNYA</em>!!</h1>
+      <p class="hero-copy">From the quiet new joinee I complimented to the certified classroom chatterbox. From class activities to lunch-time chaos, daily life updates, silly fights, and always showing up for each other — our friendship has a whole lot of lore. And yes, I still miss our old closeness sometimes. I’m just really glad you’re still right here in my college chapter. ♡</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#roast">Enter at your own risk ↘</a>
+        <button class="button button-light" id="confettiBtn" type="button">Press for drama ✨</button>
+      </div>
+      <div class="scribble">made with<br>questionable<br>sanity ♡</div>
+      <div class="hero-stamp">BIRTHDAY<br>EDITION<br>NO. 001</div>
+    </section>
+
+    <nav class="section-nav" aria-label="Scrapbook sections">
+      <a href="#roast">01 / The Roast</a><a href="#quiz">02 / Quiz</a><a href="#memories">03 / Memories</a><a href="#letter">04 / Secret Letter</a>
+    </nav>
+
+    <section id="roast" class="section roast-section">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div><p class="eyebrow">FRIENDSHIP COURT IS NOW IN SESSION</p><h2>The Roast Page 🔥</h2></div>
+      </div>
+      <div class="roast-grid">
+        <article class="paper roast-card tilt-left">
+          <span class="doodle">⚠️</span><p class="card-kicker">PUBLIC SERVICE ANNOUNCEMENT</p>
+          <h3>Wanted for crimes against classroom silence</h3>
+          <ul>
+            <li>Arriving as the quiet new joinee and evolving into a full-time chatterbox.</li>
+            <li>Turning lunch breaks into a daily comedy show.</li>
+            <li>Exchanging life updates like we run a 24/7 news channel.</li>
+            <li>Being odd, being even, and somehow still being my person.</li>
+          </ul>
+          <p class="small-note">*The allegations are serious. The friendship is unserious.</p>
+        </article>
+        <article class="paper roast-card roast-pink tilt-right">
+          <p class="card-kicker">EXCLUSIVE SCIENTIFIC REPORT</p>
+          <h3>Brain activity report</h3>
+          <div class="brain-meter"><span></span></div>
+          <div class="meter-labels"><span>Common sense</span><strong>404 NOT FOUND</strong></div>
+          <div class="brain-meter second"><span></span></div>
+          <div class="meter-labels"><span>Chaos levels</span><strong>OVERFLOWING</strong></div>
+          <p class="big-quote">“I’m the quiet one.”<br><small>— you, back when I first met you on the 8th. The evidence says otherwise.</small></p>
+        </article>
+      </div>
+      <button class="button button-dark center-button" id="roastBtn" type="button">Generate another roast 💀</button>
+      <p id="roastOutput" class="roast-output" aria-live="polite">Your roast will appear here. Brace yourself.</p>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div><p class="eyebrow">A TEST OF OUR QUESTIONABLE HISTORY</p><h2>How well do you know us? 🧠</h2></div>
+      </div>
+      <div class="paper quiz-card">
+        <div class="quiz-top"><span id="quizProgress">QUESTION 1 / 5</span><span>NO CHEATING, GREMLIN</span></div>
+        <div class="progress-track"><div id="progressFill"></div></div>
+        <h3 id="questionText">Loading question...</h3>
+        <div id="answerOptions" class="answer-options"></div>
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+        <div class="quiz-controls"><button id="nextQuestion" class="button button-dark" type="button" disabled>Next question →</button><button id="restartQuiz" class="text-button" type="button">Start over</button></div>
+        <div id="quizResult" class="quiz-result" hidden></div>
+      </div>
+      <p class="small-note centered">Customize the questions in <code>script.js</code> so the quiz is extremely specific and mildly incriminating.</p>
+    </section>
+
+    <section id="memories" class="section memories-section">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div><p class="eyebrow">EVIDENCE THAT WE HAVE LEFT THE HOUSE</p><h2>The Memory Wall 📸</h2></div>
+      </div>
+      <p class="section-intro">From doing almost every activity together to laughing over lunch and sharing the tiniest life updates — these are the little moments that quietly became our favorite memories. Four little pieces of our story, preserved forever in this tiny corner of the internet. ♡</p>
+      <div class="memory-grid">
+        <figure class="memory-card photo-one">
+          <img src="assets/memory-1.jpeg" alt="Us sharing an umbrella on a rainy day">
+          <figcaption><span class="caption-tape">RAINY DAY LORE</span><p>One umbrella, two besties, and absolutely no normal behavior. ☔</p></figcaption>
+        </figure>
+        <figure class="memory-card photo-two">
+          <img src="assets/memory-2.jpeg" alt="Us dressed up in our traditional outfits">
+          <figcaption><span class="caption-tape">TRADITIONAL QUEENS</span><p>Serving looks like we do not cause chaos five minutes later. 💚</figcaption>
+        </figure>
+        <figure class="memory-card photo-three">
+          <img src="assets/memory-3.jpeg" alt="A college selfie together in our uniforms">
+          <figcaption><span class="caption-tape">COLLEGE CLASSICS</span><p>Uniform on, friendship lore loading, daily updates pending. ♡</p></figcaption>
+        </figure>
+        <figure class="memory-card photo-four">
+          <img src="assets/memory-4.jpeg" alt="Our late-night selfie together">
+          <figcaption><span class="caption-tape">NIGHT SHIFT</span><p>Just two besties collecting memories like it is our full-time job. 🌙</p></figcaption>
+        </figure>
+      </div>
+      <p class="photo-tip">FOUR PHOTOS. A MILLION MEMORIES. ZERO CHANCE OF US ACTING NORMAL. ♡</p>
+    </section>
+
+    <section id="letter" class="section letter-section">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div><p class="eyebrow">OPEN ONLY WHEN YOU NEED A REMINDER</p><h2>A Secret Letter 💌</h2></div>
+      </div>
+      <div class="letter-wrap">
+        <div class="letter-envelope" aria-hidden="true"><div class="envelope-heart">♥</div></div>
+        <article class="paper letter-paper">
+          <p class="letter-date">TO MY FAVORITE MENACE, THARUNYA ♡</p>
+          <div id="letterContent">
+            <p>Happy birthday, <strong class="friend-name">THARUNYA</strong>!! 🥹❤️</p>
+            <p>It’s funny to think that when I first met you on the 8th, I was the class leader and you were the new joinee. You seemed so quiet that I actually complimented you for being the quiet one. Look at you now — a certified chatterbox. I would like to file a formal complaint about this character development. 😭</p>
+            <p>Somewhere along the way, you became so much more than just someone in my class. We started doing almost everything together, sharing daily updates, teasing each other, laughing over lunch, caring for each other, and showing up when life got a little difficult. We have our odd and even moments, and I love that I can be completely myself around you — even when I shout, act dramatic, or realize I’m wrong and come back to say sorry.</p>
+            <p>And honestly, there’s something I don’t always know how to say: I miss our old closeness sometimes. Not because I’m not happy now, and not because I don’t value what we still have. I just miss those days when we felt so close and everything seemed effortless. Maybe things feel a little different now, and I notice that distance even when you’re still right there.</p>
+            <p>But I’m genuinely happy that I still get to see you beside me in this college chapter. I’m grateful we still get to laugh, talk, share bits of our lives, and make new memories. I hope we keep finding our way back to each other in all the little ways that make this friendship ours.</p>
+            <p>So, birthday girl, I hope this year is kind to you. I hope you get the love and support you give other people, reasons to laugh until your stomach hurts, and all the good things you sometimes forget you deserve. Keep being your loud, lovely, slightly irritating self.</p>
+            <p>You went from the quiet new joinee to one of my favorite people, and I’m really glad our paths crossed. No matter how much life changes, I’ll always be thankful for the story we’ve had so far — and for all the chapters still waiting for us.</p>
+            <p class="letter-signoff">With all my love (and a legally required amount of roasting),<br><strong>YOUR CLASS LEADER-TURNED-CHAOS PARTNER</strong> ♡</p>
+          </div>
+          <button class="button button-dark" id="letterToggle" type="button" aria-expanded="true">Fold the letter ↑</button>
+        </article>
+      </div>
+      <p class="small-note centered">Edit the letter directly in <code>index.html</code>. Add your own inside jokes. Make them cry, then immediately ruin the moment.</p>
+    </section>
+
+    <section class="final-note paper">
+      <div class="final-doodle" aria-hidden="true">★ ♡ ★</div>
+      <p class="eyebrow">END OF OFFICIAL BIRTHDAY DOCUMENT</p>
+      <h2>In conclusion...</h2>
+      <p>You're stuck with me. That's the gift. That's the curse.</p>
+      <button id="finalBtn" class="button button-pink" type="button">One last birthday surprise 🎂</button>
+      <p id="finalMessage" class="final-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><span>© THARUNYA’S BESTIE ARCHIVES</span><span>Made of chaos, paper scraps & affection ✦</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
